@@ -1,1 +1,402 @@
 # Logfile created on 2011-02-01 22:31:13 +0800 by logger.rb/25413
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (165.2ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (144.4ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (155.1ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (146.1ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (290.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (76.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('0')[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (81.0ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (122.7ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (67.6ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (145.1ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (76.5ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (123.1ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (81.6ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.9ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (122.8ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.5ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (123.0ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (61.1ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (122.5ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (64.1ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (111.7ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (66.1ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (89.2ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (98.6ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (145.5ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (87.4ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (124.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (66.0ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (112.1ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.3ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (83.5ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (124.4ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (66.0ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (123.0ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.4ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.2ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (102.3ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (122.9ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.3ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (134.1ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (67.1ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (167.6ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (95.4ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (135.8ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.9ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (134.0ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.6ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (111.8ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (91.1ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (145.3ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (87.6ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (123.0ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.2ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (134.2ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (93.8ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (66.0ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (122.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.4ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (146.9ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (94.4ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (156.3ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (77.0ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (145.3ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (66.3ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (144.9ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.3ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (112.4ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.8ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.3ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (111.6ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (66.0ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (122.9ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (205.8ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (135.6ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.1ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (111.9ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.4ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (123.1ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (90.5ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (122.9ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.0ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (124.6ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.7ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.2ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (109.1ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (156.2ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (76.2ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (76.5ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (123.1ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (92.9ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (122.7ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.4ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (122.6ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.6ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.0ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (96.3ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (145.0ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.3ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (144.9ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (88.2ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (135.7ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (92.7ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.9ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (87.6ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (144.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (78.9ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (122.9ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (73.6ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (133.8ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.9ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (122.8ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.5ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (100.7ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (96.6ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.9ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.2ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (133.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (143.4ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (113.4ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (85.6ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (156.3ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.9ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (145.0ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.1ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (145.1ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (93.9ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (146.6ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.4ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (144.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (66.0ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (102.9ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (144.9ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (77.0ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (122.7ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (54.9ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (122.7ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.3ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (95.5ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.8ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (120.9ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (111.5ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.6ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.2ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (93.9ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (146.6ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (76.3ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (144.9ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (76.7ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (133.8ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.3ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (93.1ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (156.1ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.0ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (133.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.6ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (133.9ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (93.2ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (145.0ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (43.7ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (111.7ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (42.9ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (122.8ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mYaffleTest::Hickwall Load (0.4ms)[0m  [1mSELECT `hickwalls`.* FROM `hickwalls`[0m
+  [1m[35mYaffleTest::Wickwall Load (0.2ms)[0m  SELECT `wickwalls`.* FROM `wickwalls`
+  [1m[36mSQL (1.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (67.0ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.9ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (87.9ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (111.6ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.9ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (111.9ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (69.6ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (133.6ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (67.6ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (122.7ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (77.1ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (111.5ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (98.3ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (133.6ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.3ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (144.6ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.3ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.0ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.4ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (86.5ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (134.0ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (76.4ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (178.3ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (76.4ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.0ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (99.3ms)[0m  [1mDROP TABLE `hickwalls`[0m
+  [1m[35mSQL (133.7ms)[0m  CREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (77.0ms)[0m  DROP TABLE `wickwalls`
+  [1m[36mSQL (146.8ms)[0m  [1mCREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (65.4ms)[0m  [1mDROP TABLE `woodpeckers`[0m
+  [1m[35mSQL (164.0ms)[0m  CREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36mSQL (1.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (86.5ms)[0m  DROP TABLE `hickwalls`
+  [1m[36mSQL (167.5ms)[0m  [1mCREATE TABLE `hickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_squawk` varchar(255), `last_squawked_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (76.3ms)[0m  [1mDROP TABLE `wickwalls`[0m
+  [1m[35mSQL (133.9ms)[0m  CREATE TABLE `wickwalls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `last_tweet` varchar(255), `last_tweeted_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (65.5ms)[0m  DROP TABLE `woodpeckers`
+  [1m[36mSQL (134.1ms)[0m  [1mCREATE TABLE `woodpeckers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mYaffleTest::Hickwall Load (0.3ms)[0m  SELECT `hickwalls`.* FROM `hickwalls`
+  [1m[36mYaffleTest::Wickwall Load (0.2ms)[0m  [1mSELECT `wickwalls`.* FROM `wickwalls`[0m

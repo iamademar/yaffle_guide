@@ -6,8 +6,8 @@ require File.expand_path(File.join(ENV['RAILS_ROOT'], 'config/environment.rb'))
 
 def load_schema
 
-  config = YAML::load(IO.read(File.dirname(__FILE__) + '/database.yml'))
-  ActiveRecord::Base.logger = Logger.new(File.dirname(__FILE__) + "/debug.log")
+  config = YAML::load(IO.read(File.expand_path(File.dirname(__FILE__) + '/database.yml')))
+  ActiveRecord::Base.logger = Logger.new(File.expand_path(File.dirname(__FILE__) + '/debug.log'))
 
   db_adapter = ENV['DB']
 
@@ -30,6 +30,11 @@ def load_schema
   end
 
   ActiveRecord::Base.establish_connection(config[db_adapter])
-  load(File.dirname(__FILE__) + "/schema.rb")
-  require File.dirname(__FILE__) + '/../rails/init'
+  load("schema.rb")
+
+  puts '------- ActiveRecord --------'
+  puts ActiveRecord::Base.inspect
+  puts '------- ActiveRecord --------'
+  # Comment for now
+  #require File.dirname(__FILE__) + '/../rails/init'
 end
